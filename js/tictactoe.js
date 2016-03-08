@@ -18,7 +18,7 @@ $(document).ready(function() {
       theMainfunction();
       if (turns === 9) {
         reset();
-        $('h1').html("The Game Is Draw")
+        $('h1').html("The Game Is A Draw")
       }
     }
   });
@@ -58,10 +58,10 @@ $(document).ready(function() {
         return array.indexOf(val) >= 0;
       });
       if (isSuperset && turns % 2 === 0) {
-        $('h1').html("Player One Won");
+        $('h1').html("Player Two Won");
         reset();
       } else if (isSuperset && turns % 2 !== 0) {
-        $('h1').html("Player Two Won");
+        $('h1').html("Player One Won");
         reset();
       }
     }
